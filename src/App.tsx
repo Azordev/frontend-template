@@ -1,27 +1,27 @@
 import React from 'react'
-import { css, jsx, Global } from '@emotion/react'
-import mq from './config/breakpoints'
+import { css, Global } from '@emotion/react'
 import 'css-maid'
+import { LimeLink } from './components/Link.styled'
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Vret Boilerplate⚡</h1>
-      <a
-        href='https://github.com/joshxfi/vret-boilerplate'
-        target='_blank'
-        rel='noreferrer'
-      >
+      <h1>Azordev Boilerplate⚡</h1>
+      <LimeLink href="https://github.com/Azordev/frontend-template" target="_blank" rel="noreferrer">
         star this repo!
-      </a>
+      </LimeLink>
       <Global
         styles={css`
           @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 
           a {
-            color: lime;
-          }
+            text-decoration: underline
 
+            &:hover {
+              text-decoration: none;
+            }
+          }
+          
           body {
             text-align: left;
             color: #fff;
@@ -34,28 +34,10 @@ const App: React.FC = () => {
           h1 {
             font-size: 2rem;
           }
-
-          ${mq[2]} {
-            a {
-              color: firebrick;
-            }
-          }
-
-          ${mq[1]} {
-            a {
-              color: mediumblue;
-            }
-          }
-
-          ${mq[0]} {
-            a {
-              color: blanchedalmond;
-            }
-          }
         `}
       />
     </div>
   )
 }
 
-export default App;
+export default App
