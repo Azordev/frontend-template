@@ -1,0 +1,21 @@
+{
+  "version": "0.2",
+  "language": "en,es",
+  "words": [
+    "azordev"
+  ],
+  "flagWords": ["hte"],
+  "ignorePaths": [
+    "./.github/**",
+    "./.vscode/**",
+    "node_modules/**",
+    "src/*.d.ts",
+    "*rc.js",
+    "./*.json",
+    "./package.json",
+    "./package-lock.json",
+    "*config.*",
+    "*.yml",
+    ".*ignore"
+  ]
+}

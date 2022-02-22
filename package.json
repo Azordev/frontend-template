@@ -1,0 +1,71 @@
+{
+  "name": "azordev-frontend-react-vite",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.8.1",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-react": "^1.0.7",
+    "css-maid": "^2.0.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Azordev/frontend-template/"
+  },
+  "bugs": {
+    "url": "https://github.com/Azordev/frontend-template/issues"
+  },
+  "author": {
+    "name": "Israel Laguan",
+    "email": "israellaguan@gmail.com",
+    "url": "https://github.com/Israel-Laguan"
+  },
+  "contributors": [
+    {
+      "name": "Victor Peña",
+      "email": "victordev2002@gmail.com",
+      "url": "https://github.com/Katsu08"
+    },
+    {
+      "name": "Emmanuel Azócar",
+      "email": "azocarmel@gmail.com",
+      "url": "https://github.com/e-azocar"
+    },
+    {
+      "name": "Angelica Molina",
+      "email": "angeli.molina1@gmail.com",
+      "url": "https://github.com/angelik0828"
+    }
+  ]
+}
