@@ -4,15 +4,24 @@ module.exports = {
     es2021: true,
     'jest/globals': true,
   },
-  extends: ['plugin:react/recommended', 'standard', 'prettier', 'plugin:react/jsx-runtime'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
+    'standard',
+    'prettier',
+    'plugin:react/jsx-runtime',
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 12,
     sourceType: 'module',
+    project: './tsconfig.json',
   },
-  plugins: ['react', 'jest'],
+  plugins: ['react', '@typescript-eslint', 'jest'],
   overrides: [
     {
       files: ['src/*.{js,jsx}', 'src/**/*.{js,jsx,}'],
@@ -27,6 +36,7 @@ module.exports = {
   },
   settings: {
     react: {
+      pragma: 'React',
       version: 'detect',
     },
   },

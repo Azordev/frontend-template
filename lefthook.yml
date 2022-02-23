@@ -2,16 +2,16 @@ pre-commit:
   parallel: true
   commands:
     prettier:
-      glob: '*.{js,jsx}'
+      glob: '*.{js,jsx,ts,tsx}'
       run: npm run prettier:ci {staged_files}
     eslint:
-      glob: '*.{js,jsx}'
+      glob: '*.{js,jsx,ts,tsx}'
       run: npm run eslint:ci {staged_files}
     stylelint:
-      glob: './**/*.styled.jsx' # For CSS-in-JS
+      glob: './**/*.styled.{jsx,tsx}' # For CSS-in-JS
       run: npm run stylelint:ci {staged_files}
     spelling:
-      glob: '*.{js,jsx,md}'
+      glob: '*.{js,jsx,md,ts,tsx}'
       run: npm run spelling:ci {staged_files}
     markdown-link-check:
       glob: '*.md'
