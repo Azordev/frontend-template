@@ -1,4 +1,5 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import * as React from 'react'
 import { render } from '@testing-library/react'
 import Home from './Home'
