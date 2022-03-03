@@ -12,7 +12,7 @@ const Counter = () => {
 
 const Home = () => (
   <div>
-    <h1>Hello, world!</h1>
+    <h1 data-testid="h1:mainTittle">Hello, world!</h1>
     <Counter />
   </div>
 )

@@ -2,9 +2,12 @@
   "version": "0.2",
   "language": "en,es",
   "words": [
-    "azordev"
+    "azordev",
+    "testid"
   ],
-  "flagWords": ["hte"],
+  "flagWords": [
+    "hte"
+  ],
   "ignorePaths": [
     "./.github/**",
     "./.vscode/**",
