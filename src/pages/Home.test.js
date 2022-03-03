@@ -10,7 +10,7 @@ describe('App', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it('Verify if data test exist', () => {
+  it('Verify if data test id exist on snapshot', () => {
     const { getByTestId } = render(<Home />)
     const element = getByTestId(/h1:mainTittle/)
     expect(element).toBeInTheDocument()
